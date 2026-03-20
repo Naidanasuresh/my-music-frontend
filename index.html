@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeTune</title>
+    <script defer type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <div class="main-container">
+        <div class="sidebar">
+          <h1>🎧VibeTune</h1>
+
+          <a href="#" id="homebtn"
+            ><div class="homediv">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-house-door-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                />
+              </svg>
+              <h3>Home</h3>
+            </div></a
+          >
+          <!-- <div class="searchbar-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+            <h3>Search</h3>
+            <input class="searchbar" type="Search" placeholder="Search..." />
+          </div> -->
+
+          <a href="#" id="playlistbtn">
+            <div class="playlistdiv">
+              <img
+                src="public/We’re not GenZ actually.jpg"
+                class="playlistimg"
+                alt=""
+              />
+              <h3>PlayLists</h3>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <!-- playlistpage -->
+      <div id="playlistpage" style="display: none">
+        <div class="article-container-div">
+          <article class="articles" data-category="Heart Break">
+            <img src="public/download (10).jpg" alt="" /> Heart Break
+          </article>
+          <article class="articles" data-category="Love">
+            <img src="public/download (6).jpg" /> Love
+          </article>
+          <article class="articles" data-category="Motivation">
+            <img src="public/Tommy Shelby Motivation🔥.jpg" alt="" />Motivation
+          </article>
+          <article class="articles" data-category="All Telugu Songs">
+            <img src="public/kollywood music.jpg" alt="" />All Telugu Songs
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- main page -->
+    <div class="maincontainer" id="homepage">
+      <h1 class="main-container-quote">Where every mood meets music</h1>
+
+      <div class="thisforsettingsidebtns">
+        <button
+          class="nav-btn left"
+          id="prevBtn"
+          style="
+            height: 40px;
+            display: flex;
+            align-items: center;
+            margin-top: 150px;
+            margin-left: 30px;
+          "
+        >
+          ⏮
+        </button>
+        <div class="video-slides">
+          <video
+            class="slide active"
+            src="public/YTDown.com_YouTube_Modhale-Modhale-Lyrical-Vishnu-Vinyasam-_Media_i7vy3iGmqSI_002_720p.mp4"
+            muted
+            autoplay
+            loop
+          ></video>
+        
+          <video
+            class="slide"
+            src="public/YTDown.com_YouTube_Fear-Song-Promo-Devara-Part-1-NTR-Korata_Media_y1fUR9WeKLo_002_720p.mp4"
+            muted
+            autoplay
+            loop
+          ></video>
+          <video
+            class="slide"
+            src="public/YTDown.com_YouTube_Laayi-Le-song-Promo-The-Girlfriend-Rashm_Media_TlwNPIfgxOo_002_720p.mp4"
+            muted
+            autoplay
+            loop
+          ></video>
+          <video
+            class="slide"
+            src="public/YTDown.com_YouTube_Oosupodu-Song-Promo-Fidaa-Songs-Varun-Te_Media_D59RCQr_Tr8_002_720p.mp4"
+            muted
+            autoplay
+            loop
+          ></video>
+        </div>
+        <button
+          class="nav-btn right"
+          id="nextBtn"
+          style="
+            height: 40px;
+            display: flex;
+            align-items: center;
+            margin-top: 150px;
+            margin-left: 27px;
+          "
+        >
+          ⏭
+        </button>
+      </div>
+    </div>
+
+    <!-- songs page -->
+
+    <div class="songspage" id="songpage" style="display: none">
+      <div class="songscategory-poster-container">
+        <img
+          class="poster-image"
+          id="songscategory-poster"
+          src=""
+          alt=""
+        />
+        <h1 id="categoryof-song" class="categoryTitle" style="color: white">
+          Category of the song
+        </h1>
+      </div>
+
+      <div>
+        <ul class="ulitems" id="song-list">
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <!-- left-side -->
+      <div class="song-info">
+        <img id="footer-poster"  class="footerPoster" alt="" />
+        <div>
+          <span id="title">Song Name</span>
+        </div>
+      </div>
+      <!-- center -->
+      <div class="controls">
+        <div class="playbtns">
+          <button class="prevbtn">⏮</button>
+          <button class="playPausebtn">▶</button>
+          <button class="nextbtn">⏭</button>
+        </div>
+        <!-- <input type="range" id="progressBar" value="0" min="0" max="100" /> -->
+      </div>
+    </div>
+  </body>
+</html>
